@@ -1187,7 +1187,7 @@ const d = new Date("2024-Jan-08");
 //     },
 //     {
 //         id: 17,
-//         name: "Rokib"
+//         name: "Rahnaf"
 //     }
 // ];
 
@@ -1413,21 +1413,21 @@ const d = new Date("2024-Jan-08");
 
 
 //Nested if else
-// const sirName = "Rokib";
+// const sirName = "Rahnaf";
 // const sirCharacter = "Always Angry"
 
-// if (sirName == "Rokib" && sirCharacter == "Always Angry") {
-//     console.log("Yeah I'm Rokib What you want?");
+// if (sirName == "Rahnaf" && sirCharacter == "Always Angry") {
+//     console.log("Yeah I'm Rahnaf What you want?");
 
-// } else if (sirName == "Rokib" && sirCharacter == "Cool Man") {
+// } else if (sirName == "Rahnaf" && sirCharacter == "Cool Man") {
 //     console.log("Not found him");
 // }
 
-// else if (sirName == "Rokib" && sirCharacter == "Aww Innocent") {
+// else if (sirName == "Rahnaf" && sirCharacter == "Aww Innocent") {
 //     console.log("Innocent Sirrrr");
 
 // }
-// else if (sirName == "Rokib" && sirCharacter == "Tui Amr theka besi bojho") {
+// else if (sirName == "Rahnaf" && sirCharacter == "Tui Amr theka besi bojho") {
 //     console.log("Chup kor Voy pawna amk ?");
 // } else {
 //     console.log("Assalamu Alikum Sirrr");
@@ -1540,7 +1540,7 @@ const d = new Date("2024-Jan-08");
 //     },
 //     {
 //         id: 13,
-//         name: "Rokib"
+//         name: "Rahnaf"
 //     },
 //     {
 //         id: 14,
@@ -1548,15 +1548,15 @@ const d = new Date("2024-Jan-08");
 //     },
 //     {
 //         id: 17,
-//         name: "Rokib"
+//         name: "Rahnaf"
 //     }
 // ];
 
-// const Obj = MyObject.filter(Name => Name.name == "Rokib");
+// const Obj = MyObject.filter(Name => Name.name == "Rahnaf");
 // console.log(Obj);
 
 
-// const find = MyObject.find(single => single.name === "Rokib")
+// const find = MyObject.find(single => single.name === "Rahnaf")
 // console.log(find);
 
 
@@ -1578,3 +1578,59 @@ const d = new Date("2024-Jan-08");
 // const Arr = ["A", "B", "D", "F"]
 // const res = Arr.reverse()
 // console.log(res);
+
+
+// while loop
+
+// let i = 1;
+// while (i <= 10) {
+//     console.log(`Value of index is ${i}`);
+//     // i = i + 2;
+//     i++
+// }
+
+// const myArr = ["flash", "batman", "superman"];
+// let arr = 0;
+
+// while (arr < myArr.length) {
+//     console.log(`Value is ${myArr[arr]}`);
+//     arr = arr + 1
+// }
+
+
+
+// let score = 1
+// do {
+//     console.log(`Score is ${score}`);
+//     score++
+// } while (score <= 10);
+
+// for of 
+// const arr = [1, 2, 3, 4, 5]
+// for (const num of arr) {
+//     console.log(num);
+//     // const num1 = num + 2;
+//     // console.log(num1);
+// }
+
+// const name = "Heyy bebs"
+// for (const single of name) {
+//     console.log(`Each char is ${single}`);
+// }
+
+
+// const arr = [1, 2, 3, 4, 5];
+// const number = arr.map(num => num * 2);
+// console.log(number);
+
+
+const myObject = {
+    js: "JavaSCript",
+    cap: "C++",
+    rb: "ruby",
+    swift: "swift by apple"
+}
+
+for (const key in myObject) {
+    console.log(`${key} shorted is for ${myObject[key]}`);
+}
