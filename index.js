@@ -25,8 +25,8 @@
 
 
 
-let x = 123;
-const num = x.toString();
+// let x = 123;
+// const num = x.toString();
 // console.log(typeof num);
 
 // console.log(parseInt('10.80 20 30'));
@@ -1599,13 +1599,13 @@ const d = new Date("2024-Jan-08");
 
 
 
-// let score = 1
+// let score = 111
 // do {
 //     console.log(`Score is ${score}`);
 //     score++
 // } while (score <= 10);
 
-// for of 
+// for of
 // const arr = [1, 2, 3, 4, 5]
 // for (const num of arr) {
 //     console.log(num);
@@ -1624,13 +1624,124 @@ const d = new Date("2024-Jan-08");
 // console.log(number);
 
 
-const myObject = {
-    js: "JavaSCript",
-    cap: "C++",
-    rb: "ruby",
-    swift: "swift by apple"
-}
+// const myObject = {
+//     js: "JavaSCript",
+//     cap: "C++",
+//     rb: "ruby",
+//     swift: "swift by apple"
+// }
 
-for (const key in myObject) {
-    console.log(`${key} shorted is for ${myObject[key]}`);
-}
+// for (const key in myObject) {
+//     console.log(`${key} shorted is for ${myObject[key]}`);
+// }
+
+
+
+// for in
+// const arr = [1, 2, 3, 4, 5];
+// for (const key in arr) {
+//     console.log(key, arr[key]);
+// }
+
+
+// const myObject = [
+//     {
+//         id: 1,
+//         js: "JavaSCript",
+//         cap: "C++",
+//         rb: "ruby",
+//         swift: "swift by apple"
+//     },
+//     {
+//         id: 2,
+//         js: "JavaSCript",
+//         cap: "C++",
+//         rb: "ruby",
+//         swift: "swift by apple"
+//     }
+// ]
+
+// myObject.map(singleObj => console.log(singleObj))
+
+
+
+// const coding = ["js", "ruby", "java", "python", "C++"]
+
+// coding.forEach(function (value) {
+//     console.log(value);
+// })
+
+
+// coding.forEach((value) => {
+//     console.log(value);
+// })
+
+
+// coding.forEach((value, index, arr) => {
+//     console.log(value, index, arr);
+// })
+
+
+// const myObject = [
+//     {
+//         id: 1,
+//         js: "JavaSCript",
+//         cap: "C++",
+//         rb: "ruby",
+//         swift: "swift by apple"
+//     },
+//     {
+//         id: 2,
+//         js: "Js",
+//         cap: "C++",
+//         rb: "ruby",
+//         swift: "swift by apple"
+//     }
+// ]
+
+// myObject.forEach((item) => {
+//     console.log(item.js);
+// })
+
+
+// const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// const res = nums.filter(num => num > 4)
+// console.log(res);
+
+
+
+// const books = [
+//     { title: "Books One", subject: "History", publish: 1991 },
+//     { title: "Books Three", subject: "Science", publish: 1992 },
+//     { title: "Books Three", subject: "Data Science", publish: 1993 },
+//     { title: "Books Four", subject: "Science", publish: 1995 }
+// ]
+
+// const myBook = books.filter(book => book.subject === "Science" && book.publish <= 1995);
+// console.log(myBook);
+
+
+
+const num = 1;
+
+const randomNumber = Math.floor(Math.random() * 10 + 1);
+let guessNumber;
+let count = 0;
+console.log(randomNumber, guessNumber);
+do {
+    guessNumber = prompt(`1 theka 10 er moddhe akta number dan sir`)
+    if (isNaN(guessNumber)) {
+        alert(`Please enter a number`)
+        continue;
+    } else {
+        count++
+    }
+
+    if (Number(guessNumber) === randomNumber) {
+        alert(`Winner ${count}`)
+    } else {
+        alert(`failure`)
+    }
+
+} while (Number(guessNumber) !== randomNumber);
