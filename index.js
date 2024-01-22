@@ -1723,25 +1723,40 @@ const d = new Date("2024-Jan-08");
 
 
 
-const num = 1;
+// const num = 1;
 
-const randomNumber = Math.floor(Math.random() * 10 + 1);
-let guessNumber;
-let count = 0;
-console.log(randomNumber, guessNumber);
-do {
-    guessNumber = prompt(`1 theka 10 er moddhe akta number dan sir`)
-    if (isNaN(guessNumber)) {
-        alert(`Please enter a number`)
-        continue;
-    } else {
-        count++
-    }
+// const randomNumber = Math.floor(Math.random() * 10 + 1);
+// let guessNumber;
+// let count = 0;
+// console.log(randomNumber, guessNumber);
+// do {
+//     guessNumber = prompt(`1 theka 10 er moddhe akta number dan sir`)
+//     if (isNaN(guessNumber)) {
+//         alert(`Please enter a number`)
+//         continue;
+//     } else {
+//         count++
+//     }
 
-    if (Number(guessNumber) === randomNumber) {
-        alert(`Winner ${count}`)
-    } else {
-        alert(`failure`)
-    }
+//     if (Number(guessNumber) === randomNumber) {
+//         alert(`Winner ${count}`)
+//     } else {
+//         alert(`failure`)
+//     }
 
-} while (Number(guessNumber) !== randomNumber);
+// } while (Number(guessNumber) !== randomNumber);
+
+
+
+const myNum = [1, 2, 3, 4, 5, 6, 7];
+
+// const newNum = myNum.map((num) => num + 10)
+
+const newNums = myNum
+    .map(num => num * 10)
+    .map(num => num + 1)
+    .filter(num => num >= 40)
+console.log(newNums);
+
+
+
