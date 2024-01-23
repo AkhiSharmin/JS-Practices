@@ -1748,15 +1748,69 @@ const d = new Date("2024-Jan-08");
 
 
 
-const myNum = [1, 2, 3, 4, 5, 6, 7];
-
-// const newNum = myNum.map((num) => num + 10)
-
-const newNums = myNum
-    .map(num => num * 10)
-    .map(num => num + 1)
-    .filter(num => num >= 40)
-console.log(newNums);
 
 
+
+
+// const myNum = [1, 2, 3, 4, 5, 6, 7];
+
+// // const newNum = myNum.map((num) => num + 10)
+
+// const newNums = myNum
+//     .map(num => num * 10)
+//     .map(num => num + 1)
+//     .filter(num => num >= 40)
+// console.log(newNums);
+
+
+
+
+
+
+// let playAgain;
+
+// do {
+//     const urName = prompt("Please Enter Your Name");
+//     const urPartner = prompt("Please Enter Your Secret Person's Name");
+//     const loveScore = Math.floor(Math.random() * 100 + 1);
+
+//     if (loveScore >= 80) {
+//         alert("Aww, you are the perfect match!");
+//     } else if (loveScore >= 60) {
+//         alert("You have a 50% chance.");
+//     } else if (loveScore >= 40) {
+//         alert("Try something good.");
+//     } else {
+//         alert("No way, bro!");
+//     }
+//     playAgain = prompt("You want play Again")
+
+// } while (playAgain.toLowerCase() === "y");
+
+
+
+// const myArr = [1, 2, 3, 4, 5];
+// const myRes = myArr.reduce((acc, item) => {
+//     return acc + item
+// }, 1)
+// console.log(myRes);
+
+
+// const shoppingCart = [
+//     {
+//         itemName: "Web Development",
+//         price: 5000
+//     },
+//     {
+//         itemName: "Digital Marketing",
+//         price: 4000
+//     },
+//     {
+//         itemName: "Graphics Design",
+//         price: 2000
+//     },
+// ]
+
+// const myTotal = shoppingCart.reduce((acc, item) => acc + item.price, 0)
+// console.log(myTotal);
 

@@ -17,20 +17,21 @@
 // console.log(res);
 
 
-const shoppingCart = [
-    {
-        itemName: "Web Development",
-        price: 5000
-    },
-    {
-        itemName: "Digital Marketing",
-        price: 4000
-    },
-    {
-        itemName: "Graphics Design",
-        price: 2000
-    },
-]
+// const shoppingCart = [
+//     {
+//         itemName: "Web Development",
+//         price: 5000
+//     },
+//     {
+//         itemName: "Digital Marketing",
+//         price: 4000
+//     },
+//     {
+//         itemName: "Graphics Design",
+//         price: 2000
+//     },
+// ]
+
 
 // const myTotal = shoppingCart.reduce((acc, item) => {
 //     return acc + item.price
@@ -40,3 +41,6 @@ const shoppingCart = [
 
 // const myShopping = shoppingCart.reduce((acc, item) => acc + item.price, 0)
 // console.log(myShopping);
+
+
+document.querySelector("heading").innerHTML = "Yaaaa I know DOM"
