@@ -29,7 +29,10 @@
     }
     addOptiLanguage("Python")
 
-    // edit 
+
+
+
+    // Replace
     const secondLang = document.querySelector("li:nth-child(3)")
     console.log(secondLang);
     // secondLang.innerHTML = "HTML5"
@@ -37,14 +40,17 @@
     newLi.textContent = "CSS3"
     secondLang.replaceWith(newLi)
 
-    //edit
-    const firstLang = document.querySelector("li:nth-child(1)")
-    firstLang.outerHTML = "<li>TypeScript</li>"
 
 
-    // remove 
-    const lastLang = document.querySelector('li:last-child')
-    lastLang.remove()
+    //edit first Child
+    // const firstLang = document.querySelector("li:nth-child(1)")
+    // firstLang.outerHTML = "<li>TypeScript</li>"
+
+
+    // // remove
+    // const lastLang = document.querySelector('li:last-child')
+    // lastLang.remove()
+
 
 </script>
 
