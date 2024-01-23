@@ -43,4 +43,4 @@
 // console.log(myShopping);
 
 
-document.querySelector("heading").innerHTML = "Yaaaa I know DOM"
+// document.querySelector("heading").innerHTML = "Yaaaa I know DOM"
