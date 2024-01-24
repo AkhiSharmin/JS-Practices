@@ -9,17 +9,25 @@ form.addEventListener('submit', function (e) {
     const weight = parseInt((document.querySelector('#weight').value))
     const results = document.querySelector('#results')
 
+
+
     if (height === "" || height < 0 || isNaN(height)) {
         results.innerHTML = `Please give me valid Height ${height}`
     }
+
+
     else if (weight === "" || weight < 0 || isNaN(weight)) {
         results.innerHTML = `Please give me valid weight ${weight}`
-    } else {
-        const bmi = (weight / ((height * height) / 1000)).toFixed(2)
-        if (bmi < 18) {
+    }
+
+
+    else {
+        const bmi = (weight / (height * height)).toFixed(2)
+        console.log(bmi);
+        if (parseInt(bmi) < 18) {
             results.innerHTML = `<span>Result: Under Weight ${bmi}</span>`
 
-        } else if (bmi > 18 || bmi < 24) {
+        } else if (parseInt(bmi) > 18 && parseInt(bmi) < 24) {
             results.innerHTML = `<span>Result: Normal Range ${bmi}</span>`
 
         } else {
