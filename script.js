@@ -172,3 +172,38 @@
 //without destructuring
 // const singleName = employee.filter(employee => employee.name === "Alice");
 // console.log(singleName);
+
+
+
+// const number = [60, 60, 60, 40, 50, 60, 60, 80, 50, 55, 55, 56, 44, 77, 44];
+
+// let sum = 0;
+
+// for (let i = 0; i < number.length; i++) {
+//     // console.log(number[i]);
+//     sum = sum + number[i]
+//     // console.log(sum);
+// }
+
+// const result = sum / number.length;
+// console.log(result.toFixed(2));
+
+
+
+
+
+
+
+
+
+const number = [60, 80, 60, 40, 30, 30, 40]
+
+let sum = 0;
+
+for (let i = 0; i < number.length; i++) {
+    // console.log(number[i]);
+    sum = sum + number[i]
+}
+
+const result = sum / number.length;
+console.log(result.toFixed(2));
