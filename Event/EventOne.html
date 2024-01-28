@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+
+<body>
+    <h2>Learn to Event</h2>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+
+    const saySharmin = () => {
+        console.log("Hey Sharmin");
+    }
+
+    const changeText = () => {
+        document.querySelector('h2').innerHTML = "Try to learning Event"
+    }
+
+    const changeMe = setTimeout(changeText, 2000)
+
+    document.querySelector('#stop').addEventListener('click', function (e) {
+        clearTimeout(changeMe)
+        console.log("Stopped");
+    })
+
+    // setTimeout(() => {
+    //     console.log("Sharmin");
+    // }, 2000)
+    // setInterval(() => {
+    //     console.log("Sharmin");
+    // }, 2000)
+</script>
+
+</html>
