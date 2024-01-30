@@ -18,11 +18,12 @@
             this.library = "React"
             this.server = "https://localhost:300"
 
-            //requirement
-            document.querySelector('.button').addEventListener('click', this.handelClick.bind(this))
+            // document.querySelector('.button').addEventListener('click', this.handelClick.bind(this))
+
+            document.querySelector('.button').addEventListener('click', () => this.handelClick())
 
         }
-        //requirement
+
         handelClick() {
             console.log("Button Clicked");
             console.log(this.server);

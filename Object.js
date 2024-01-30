@@ -1,36 +1,33 @@
-function multipleBy5(num) {
-    return num * 5
-}
+// function multipleBy5(num) {
+//     return num * 5
+// }
 
-multipleBy5.power = 2
+// multipleBy5.power = 2
 
-// console.log(multipleBy5(5));
-// console.log(multipleBy5.power);
-// console.log(multipleBy5.prototype);
-
-
-function createUser(userName, score) {
-    this.userName = userName;
-    this.score = score;
-}
-
-createUser.prototype.increment = function () {
-    this.score++;
-}
+// // console.log(multipleBy5(5));
+// // console.log(multipleBy5.power);
+// // console.log(multipleBy5.prototype);
 
 
-createUser.prototype.printMe = function () {
-    console.log(`Price is ${this.score}`);
-}
+// function createUser(userName, score) {
+//     this.userName = userName;
+//     this.score = score;
+// }
+
+// createUser.prototype.increment = function () {
+//     this.score++;
+// }
 
 
-const hey = new createUser("Hey Girl", 25)
-const tea = createUser("Tea", 250)
-
-hey.printMe()
-
+// createUser.prototype.printMe = function () {
+//     console.log(`Price is ${this.score}`);
+// }
 
 
+// const hey = new createUser("Hey Girl", 25)
+// const tea = createUser("Tea", 250)
+
+// hey.printMe()
 
 
 
@@ -53,3 +50,5 @@ hey.printMe()
 // const tea = new createUser("Tea", 250);
 
 // hey.printMe();
+
+
