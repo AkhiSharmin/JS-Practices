@@ -1767,25 +1767,25 @@ const d = new Date("2024-Jan-08");
 
 
 
-let playAgain;
+// let playAgain;
 
-do {
-    const urName = prompt("Please Enter Your Name");
-    const urPartner = prompt("Please Enter Your Secret Person's Name");
-    const loveScore = Math.floor(Math.random() * 100 + 1);
+// do {
+//     const urName = prompt("Please Enter Your Name");
+//     const urPartner = prompt("Please Enter Your Secret Person's Name");
+//     const loveScore = Math.floor(Math.random() * 100 + 1);
 
-    if (loveScore >= 80) {
-        alert("Aww, you are the perfect match!");
-    } else if (loveScore >= 60) {
-        alert("You have a 50% chance.");
-    } else if (loveScore >= 40) {
-        alert("Try something good.");
-    } else {
-        alert("No way, bro!");
-    }
-    playAgain = prompt("You want play Again")
+//     if (loveScore >= 80) {
+//         alert("Aww, you are the perfect match!");
+//     } else if (loveScore >= 60) {
+//         alert("You have a 50% chance.");
+//     } else if (loveScore >= 40) {
+//         alert("Try something good.");
+//     } else {
+//         alert("No way, bro!");
+//     }
+//     playAgain = prompt("You want play Again")
 
-} while (playAgain.toLowerCase() === "y");
+// } while (playAgain.toLowerCase() === "y");
 
 
 
@@ -1823,3 +1823,27 @@ do {
 // const myTotal = shoppingCart.reduce((acc, item) => acc + item.price, 0)
 // console.log(myTotal);
 
+
+
+
+// const array1 = [1, 2, 3, 4, 5, 6, 7];
+
+// // Fill with 0 from position 2 until position 4
+// console.log(array1.fill(0, 2, 4));
+// // Expected output: Array [1, 2, 0, 0]
+
+// // Fill with 5 from position 1
+// console.log(array1.fill(5, 1));
+// // Expected output: Array [1, 5, 5, 5]
+
+// console.log(array1.fill(6));
+// Expected output: Array [6, 6, 6, 6]
+
+
+
+const array1 = [5, 12, 50, 130, 44];
+
+const found = array1.findLast((element) => element > 45);
+
+console.log(found);
+// Expected output: 130
