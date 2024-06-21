@@ -1841,9 +1841,16 @@ const d = new Date("2024-Jan-08");
 
 
 
-const array1 = [5, 12, 50, 130, 44];
+// const array1 = [5, 12, 50, 130, 44];
 
-const found = array1.findLast((element) => element > 45);
+// const found = array1.findLast((element) => element > 45);
 
-console.log(found);
-// Expected output: 130
+// console.log(found);
+// // Expected output: 130
+
+
+// const arr = [11, 22, 4, 3, 45, 65, 67, 87, 90];
+
+// for (let i = arr.length - 1; i >= 0; i--) {
+//     console.log(arr[i]);
+// }
