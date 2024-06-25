@@ -1767,25 +1767,25 @@ const d = new Date("2024-Jan-08");
 
 
 
-// let playAgain;
+let playAgain;
 
-// do {
-//     const urName = prompt("Please Enter Your Name");
-//     const urPartner = prompt("Please Enter Your Secret Person's Name");
-//     const loveScore = Math.floor(Math.random() * 100 + 1);
+do {
+    const urName = prompt("Please Enter Your Name");
+    const urPartner = prompt("Please Enter Your Secret Person's Name");
+    const loveScore = Math.floor(Math.random() * 100 + 1);
 
-//     if (loveScore >= 80) {
-//         alert("Aww, you are the perfect match!");
-//     } else if (loveScore >= 60) {
-//         alert("You have a 50% chance.");
-//     } else if (loveScore >= 40) {
-//         alert("Try something good.");
-//     } else {
-//         alert("No way, bro!");
-//     }
-//     playAgain = prompt("You want play Again")
+    if (loveScore >= 80) {
+        alert("Aww, you are the perfect match!");
+    } else if (loveScore >= 60) {
+        alert("You have a 50% chance.");
+    } else if (loveScore >= 40) {
+        alert("Try something good.");
+    } else {
+        alert("No way, bro!");
+    }
+    playAgain = prompt("You want play Again")
 
-// } while (playAgain.toLowerCase() === "y");
+} while (playAgain.toLowerCase() === "y");
 
 
 

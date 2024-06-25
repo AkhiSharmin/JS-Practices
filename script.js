@@ -184,6 +184,10 @@
 
 
 
+
+
+
+
 //vowel [a, e, i, o , u]
 // const arr = "Akhi";
 // let count = 0;
@@ -198,13 +202,27 @@
 //     // }
 //     if (currentChar == "a" || currentChar == "e" || currentChar == "i" || currentChar == "o" || currentChar == "u") {
 //         count++;
-//         // console.log(`${currentChar} is Vowel`);
+//         console.log(`${currentChar} is Vowel`);
 //     } else {
-//         // console.log(`${currentChar} is Not Vowel`);
+//         console.log(`${currentChar} is Not Vowel`);
 //         count2++;
 //     }
 // }
 // console.log({ count, count2 });
+
+
+//vowel [a, e, i, o , u]
+// let myString = "Sharmin"
+
+// for (let i = 0; i < myString.length; i++) {
+//     let updateCount = myString[i].toLowerCase()
+//     if (updateCount === 'a' || updateCount === 'e' || updateCount === 'i' || updateCount === 'o' || updateCount === 'u') {
+//         console.log(`${updateCount} is vowel`);
+//     } else {
+//         console.log(`${updateCount} is not vowel`);
+//     }
+// }
+
 
 
 
@@ -234,31 +252,20 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// const employee = [
-//     { name: 'Alice', department: 'Engineering' },
-//     { name: 'Bob', department: 'Sales' },
-//     { name: 'Charlie', department: 'Engineering' },
-//     { name: 'David', department: 'Marketing' },
-//     { name: 'Alice', department: 'Engineering' },
-// ];
+const employee = [
+    { name: 'Alice', department: 'Engineering' },
+    { name: 'Bob', department: 'Sales' },
+    { name: 'Charlie', department: 'Engineering' },
+    { name: 'David', department: 'Marketing' },
+    { name: 'Alice', department: 'Engineering' },
+];
 
 //find destructuring name
 // const singleName = employee.find(({ name }) => name === "Alice");
 //without destructuring
 // const singleName = employee.find(employee => employee.name === "Alice");
 // console.log(singleName);
+
 
 
 //filter destructuring name
@@ -269,7 +276,7 @@
 // console.log(singleName);
 
 
-
+//Average
 // const number = [60, 60, 60, 40, 50, 60, 60, 80, 50, 55, 55, 56, 44, 77, 44];
 
 // let sum = 0;
@@ -282,6 +289,9 @@
 
 // const result = sum / number.length;
 // console.log(result.toFixed(2));
+
+
+
 
 
 
@@ -328,6 +338,8 @@
 // let reversed = [...original, "Akhi"].reverse().join('');
 // console.log(reversed);
 
+
+
 // let myArr = "sharmin akhi"
 // let string = ""
 
@@ -347,7 +359,20 @@
 //     }
 // }
 
+//even number
+// for (let i = 55; i <= 85; i++) {
+//     if (i % 2 === 0) {
+//         // console.log(i);
+//         if (i % 5 == 0) {
+//             continue;
+//         } else {
+//             console.log(i + `amr matha`);
+//         }
+//     }
+// }
 
+
+//odd number
 // for (let i = 55; i <= 85; i++) {
 //     if (i % 2 !== 0) {
 //         // console.log(i);
@@ -360,7 +385,23 @@
 // }
 
 
+//divided by 5
+// for (let i = 55; i <= 85; i++) {
+//     if (i % 5 == 0) {
+//         console.log(i);
+//     }
+// }
 
+
+// for (let i = 10; i <= 85; i++) {
+//     if (i % 5 === 0) {
+//         console.log(i);
+//     }
+// }
+
+
+
+// not divided by 5
 // for (let i = 55; i <= 85; i++) {
 //     if (i % 2 == 1 && i % 5 !== 0) {
 //         console.log(i);
@@ -368,6 +409,7 @@
 // }
 
 
+// not divided by 5
 // for (let i = 55; i <= 85; i++) {
 //     if (i % 2 !== 0) {
 //         if (i % 5 == 0) {
@@ -378,11 +420,16 @@
 //     }
 // }
 
-
-// const num = [60, 25, 31, 43, 54, 67, 77, 33];
+//reverse Array using for loop
+// const num = [60, 25, 31, 43, 54, 67, 77, 33, 99];
 // for (let i = num.length - 1; i >= 0; i--) {
 //     console.log(num[i]);
 // }
+
+//reverse Array using reverse method
+// const num = [60, 25, 31, 43, 54, 67, 77, 33, 99];
+// const newNum = num.reverse()
+// console.log(newNum);
 
 
 // const userName = "Sharmin Akhi"
