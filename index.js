@@ -15,20 +15,25 @@
 //     document.getElementById('click').innerHTML = Date();
 // }
 
-
+// Done 
+//showing string position number
 // let myString = "Hello I want to learn more wanted and more"
 // console.log(myString.lastIndexOf("to"));
 // console.log(myString.indexOf("want"));
 
+// Done 
+// let myString = "Hello I want to learn more wanted and more"
 // let match = myString.match('w')
-// console.log(match);
+// console.log('26', match);
 
 
-
+// Done convert number to string
 // let x = 123;
 // const num = x.toString();
 // console.log(typeof num);
 
+
+//given me one number
 // console.log(parseInt('10.80 20 30'));
 
 
@@ -37,12 +42,16 @@
 // document.getElementById("demo").innerHTML = cars;
 
 
+
+//using index number by changing array
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// fruits[4] = "graphs"
-// fruits[5] = "pineapple"
+// fruits[2] = "graphs"
+// fruits[1] = "pineapple"
+// console.log(fruits);
+// last Element 
 // console.log(fruits[fruits.length - 1]);
 
-
+// Done 
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // for (i = 0; i < fruits.length; i++) {
 //     console.log(i, fruits[i]);
@@ -51,7 +60,7 @@
 
 
 // using for loop
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const fruits = ["1.Banana", "2.Orange", "3.Apple", "4.Mango"];
 // let fLen = fruits.length;
 
 // let text = "<ul>";
@@ -60,7 +69,7 @@
 // }
 // text += "</ul>";
 
-// document.getElementById("demo").innerHTML = text;\
+// document.getElementById("demo").innerHTML = text;
 
 
 
@@ -73,7 +82,7 @@
 // document.getElementById("demo").innerHTML = text;
 
 // function myFunction(value) {
-//   text += "<li>" + value + "</li>";
+//     text += "<li>" + value + "</li>";
 // }
 
 
@@ -84,6 +93,7 @@
 // }
 
 // fruits.forEach(myFunction)
+
 
 // const person = {
 //     name: "akhi",
@@ -102,9 +112,10 @@
 // console.log(newArr);
 
 
+
 // const myArr = [1, 2, 3];
 // const [a, b, c] = myArr;
-// console.log(a);
+// console.log(a, b, c);
 
 
 // const person = {
@@ -120,26 +131,67 @@
 // PersonInfo(person);
 
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+//pop remove last element
 // fruits.pop()
+
+//push added last element
 // fruits.push("Heyyyyyy")
+
+//shift remove first element
 // fruits.shift()
+
+//unshift added first element
 // fruits.unshift("grasp")
+
+//Add according to the index number
 // fruits[2] = "pineapple"
+
+//another option to added last Element
 // fruits[fruits.length] = "I'm Last"
+
 // delete fruits[1]
 
+//added according to the index number
 // fruits.splice(2, 3, "Two", "Three")
 // fruits.splice(2, 0, "X", "Y")
+
 // fruits.splice(0, 1)
 // console.log(fruits);
 
+
+//adding 2 array using concat
 // const myGirls = ["Cecilie", "Lone"];
-// const myBoys = ["Emil", "Tobias", "Linus"];
+// const myBoys = ["Email", "Tobias", "Linus"];
 // const myChildren = myBoys.concat(myGirls);
 // console.log(myChildren);
 
+
+//adding 2 object
+// const person = {
+//     firstName: "John",
+//     isEmployed: true,
+//     hobbies: "coding",
+// };
+// const person2 = {
+//     firstName: "Jon",
+//     isEmployed: true,
+//     hobbies: "coding",
+// };
+// // const myObj = [person, person2];
+// // const myObj = { ...person, person2 };
+// console.log(myObj);
+
+
+//when i using sort method Organized alphabetically like (A, B, C)
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // const myFruits = fruits.sort();
+
+//when i using reverse method reverse the fully Array [ 'Mango', 'Apple', 'Orange', 'Banana' ]
 // const myFruits = fruits.reverse()
 // console.log(myFruits);
 
@@ -153,20 +205,35 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 
 // console.log(myNum);
 
+//acceding using sort method
+// const myArr = [10, 40, 30, 50]
+// myArr.sort(function (a, b) {
+//     // console.log(a, b);
+//     return a - b
+// })
+// console.log(myArr);
 
+//descending using sort method
+// const myArr2 = [10, 40, 30, 50]
+// myArr2.sort(function (a, b) {
+//     // console.log(a, b);
+//     return b - a
+// })
+// console.log(myArr2);
+
+
+//min max
 // const myArr = [100, 30, 200, 30, 20];
-// const myRes = Math.max(...myArr);
-// const myRes = Math.min(...myArr);
-// console.log(myRes);
+// const max = Math.max(...myArr);
+// const min = Math.min(...myArr);
+// console.log(max, min);
 
 
 
-//ForEach
+//when I'm using ForEach method they are given me value, index, full Array
 // const myArr = [100, 30, 200, 30, 20];
 // function myFun(value, index, Array) {
-//     console.log(value);
-//     console.log(index);
-//     console.log(Array);
+//     // console.log(value, index, Array);
 // }
 // myArr.forEach(myFun)
 
@@ -179,6 +246,14 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // const result = myArr.map(myFun);
 // console.log(result);
 
+// const myArr2 = myArr.map(num => num * num);
+// console.log('new', myArr2);
+
+
+
+
+
+
 
 //filter
 // const myArr = [80, 30, 1, 3, 20];
@@ -187,6 +262,14 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // }
 // const result = myArr.filter(myFun);
 // console.log(result);
+
+//using filter and sort method
+// const myArr = [60, 20, 50, 55]
+// const myF = (value, index, Array) => {
+//     return value < 50
+// }
+// const res = myArr.filter(number => number - 10);
+// console.log(res.sort());
 
 
 // const students = [
@@ -211,14 +294,14 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 //   ];
 
 
-const employees = [
-    { name: 'Alice', department: 'Engineering' },
-    { name: 'Bob', department: 'Sales' },
-    { name: 'Charlie', department: 'Engineering' },
-    { name: 'David', department: 'Marketing' },
-    { name: 'Eva', department: 'Engineering' },
-];
-
+//using for loop try to find-out how many department: 'Engineering' available
+// const employees = [
+//     { name: 'Alice', department: 'Engineering' },
+//     { name: 'Bob', department: 'Sales' },
+//     { name: 'Charlie', department: 'Engineering' },
+//     { name: 'David', department: 'Marketing' },
+//     { name: 'Eva', department: 'Engineering' },
+// ];
 
 // for (let i = 0; i < employees.length; i++) {
 //     // console.log(employees[i]);
@@ -228,17 +311,20 @@ const employees = [
 // }
 
 
-// const myArr = [1, 2, 3, 4, 1, 1, 1, 1];
-// let count = 0;
-// for (let value of myArr) {
-//     // // console.log(value);
-//     // if (value % 2 == 0) {
-//     //     console.log(value);
-//     // }
-//     // count = count + value
-//     count += value
-// }
-// console.log(count);
+
+
+//for of loop
+const myArr = [1, 2, 3, 4, 1, 1, 1, 1];
+let count = 0;
+for (let value of myArr) {
+    // // console.log(value);
+    // if (value % 2 == 0) {
+    //     console.log(value);
+    // }
+    // count = count + value
+    count += value
+}
+console.log(count);
 
 // reduce
 // const myArr = [80, 30, 1, 3, 20];
@@ -1767,26 +1853,44 @@ const d = new Date("2024-Jan-08");
 
 
 
-let playAgain;
+// let playAgain;
+// do {
+//     const urName = prompt("Please Enter Your Name");
+//     const urPartner = prompt("Please Enter Your Secret Person's Name");
+//     const loveScore = Math.floor(Math.random() * 100 + 1);
 
-do {
-    const urName = prompt("Please Enter Your Name");
-    const urPartner = prompt("Please Enter Your Secret Person's Name");
-    const loveScore = Math.floor(Math.random() * 100 + 1);
+//     if (loveScore >= 80) {
+//         alert("Aww, you are the perfect match!");
+//     } else if (loveScore >= 60) {
+//         alert("You have a 50% chance.");
+//     } else if (loveScore >= 40) {
+//         alert("Try something good.");
+//     } else {
+//         alert("No way, bro!");
+//     }
+//     playAgain = prompt("You want play Again")
 
-    if (loveScore >= 80) {
-        alert("Aww, you are the perfect match!");
-    } else if (loveScore >= 60) {
-        alert("You have a 50% chance.");
-    } else if (loveScore >= 40) {
-        alert("Try something good.");
-    } else {
-        alert("No way, bro!");
-    }
-    playAgain = prompt("You want play Again")
+// } while (playAgain.toLowerCase() === "y");
 
-} while (playAgain.toLowerCase() === "y");
 
+// let play;
+// do {
+//     const urName = prompt("Please Enter Your Name");
+//     const urPartNer = prompt("Please Enter Your Partner Name");
+//     const lovePont = Math.floor(Math.random() * 100 + 1)
+
+//     if (lovePont >= 80) {
+//         alert("Aww You are the perfect Match!")
+//     } else if (lovePont >= 60) {
+//         alert("You have chance 50%")
+//     }
+//     else if (lovePont >= 40) {
+//         alert("Try something good")
+//     } else {
+//         alert("No way Bro!")
+//     }
+//     play = prompt("You want play Again")
+// } while (play.toLowerCase() === "y")
 
 
 
