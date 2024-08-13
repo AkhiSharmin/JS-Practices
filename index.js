@@ -15,13 +15,13 @@
 //     document.getElementById('click').innerHTML = Date();
 // }
 
-// Done 
+// Done
 //showing string position number
 // let myString = "Hello I want to learn more wanted and more"
 // console.log(myString.lastIndexOf("to"));
 // console.log(myString.indexOf("want"));
 
-// Done 
+// Done
 // let myString = "Hello I want to learn more wanted and more"
 // let match = myString.match('w')
 // console.log('26', match);
@@ -48,10 +48,10 @@
 // fruits[2] = "graphs"
 // fruits[1] = "pineapple"
 // console.log(fruits);
-// last Element 
+// last Element
 // console.log(fruits[fruits.length - 1]);
 
-// Done 
+// Done
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // for (i = 0; i < fruits.length; i++) {
 //     console.log(i, fruits[i]);
@@ -314,38 +314,57 @@
 
 
 //for of loop
-const myArr = [1, 2, 3, 4, 1, 1, 1, 1];
-let count = 0;
-for (let value of myArr) {
-    // // console.log(value);
-    // if (value % 2 == 0) {
-    //     console.log(value);
-    // }
-    // count = count + value
-    count += value
-}
-console.log(count);
+// const myArr = [1, 2, 3, 4, 1, 1, 1, 1];
+// let count = 0;
+// for (let value of myArr) {
+//     // // console.log(value);
+//     if (value % 2 == 0) {
+//         console.log(value);
+//     }
+//     count = count + value
+//     // count += value
+// }
+// console.log(count);
 
-// reduce
+
+
+//Using reduce
 // const myArr = [80, 30, 1, 3, 20];
 // function myFun(total, value, index, Array) {
-//     console.log(total);
+//     console.log('Total', total);
 //     return total + value;
 // }
 // const result = myArr.reduce(myFun);
 // console.log(result);
 
 
-//every
+// const arr = [11, 22, 33, 44]
+// const Fun = (total, value, index, Array) => {
+//     console.log('New Total', total);
+//     return total + value;
+// }
+// const res = arr.reduce(Fun)
+// console.log(res);
+
+
+// const arr = [1, 2, 3, 4];
+// const sum = arr.reduce((total, value) => total + value);
+// console.log(sum);
+
+
+
+//every return true or false If one is false then output is false
 // const myArr = [80, 3, 1, 3, 200];
 // function myFun(value, index, Array) {
-//     console.log(value);
+//     // console.log(value);
 //     return value > 18;
 // }
 // const result = myArr.every(myFun);
 // console.log(result);
 
-//some
+
+
+//some same as like every (return true or false)
 // const myArr = [80, 3, 1, 3, 200];
 // function myFun(value, index, Array) {
 //     console.log(value);
@@ -355,21 +374,64 @@ console.log(count);
 // console.log(result);
 
 
+//checking index Number
 // const fruit = ["Banana", "Orange", "Apple", "Mango"];
 // let position = fruit.indexOf("Orange")
 // console.log(position);
 
 
+//using reduce method
 // const numbers = [1, 2, 3, 4, 5];
-
 // const sum = numbers.reduce((everyElement, currentValue) => {
-//     console.log(everyElement);
+//     // console.log(everyElement);
 //     return everyElement + currentValue;
 // },);
-
 // console.log(sum);
 
+// const num = [1, 2, 3, 4, 5];
+// const multi = num.reduce((previousElement, nextElement, index, array) => {
+//     console.log("Single", previousElement, "current", nextElement);
+//     return previousElement + nextElement
+// })
+// console.log(multi);
 
+
+// const grades = [80, 50, 60, 40, 90];
+// const maximum = grades.reduce((previousElement, nextElement) => {
+//     const currMax = Math.max(previousElement, nextElement);
+//     if (currMax > 80) {
+//         console.log('Good Result Bro');
+//     } else {
+//         console.log("Try hard and soul");
+//     }
+//     return currMax;
+// });
+// console.log(maximum);
+
+
+
+
+
+
+// find
+// const myArray = [20, 19, 20, 70];
+// function myFun(value, index, Array) {
+//     return value > 20;
+// }
+// const result = myArray.find(myFun);
+// console.log(result);
+
+
+// find
+// const myArr = [1, 2, 3, 4, 5, 6, 7];
+// const res = myArr.find((num) => num > 4);
+// console.log(res);
+
+
+//filter
+// const myArr = [1, 2, 3, 4, 5, 6, 7];
+// const res = myArr.filter((num) => num > 4);
+// console.log(res);
 
 
 
@@ -381,37 +443,29 @@ console.log(count);
 //     { name: 'Alice', department: 'Engineering' },
 // ];
 
-//find
-// const myArray = [20, 30, 19, 20];
-// function myFun(value, index, Array) {
-//     return value > 20;
-// }
-// const result = myArray.find(myFun);
-// console.log(result);
-
 
 // const foundEmployee = employee.find(({ name }) => name === "Alice");
 // const foundEmployee = employee.filter(({ name }) => name === "Alice");
-
 // console.log(foundEmployee);
+
 
 
 // new Date()
 // new Date(date string)
 
-// new Date(year,month)
-// new Date(year,month,day)
-// new Date(year,month,day,hours)
-// new Date(year,month,day,hours,minutes)
-// new Date(year,month,day,hours,minutes,seconds)
-// new Date(year,month,day,hours,minutes,seconds,ms)
+// new Date(year, month)
+// new Date(year, month, day)
+// new Date(year, month, day, hours)
+// new Date(year, month, day, hours, minutes)
+// new Date(year, month, day, hours, minutes, seconds)
+// new Date(year, month, day, hours, minutes, seconds, ms)
 
 
 // let myDate = new Date();
 
 // let myDate = new Date();
 // const d = new Date("2024-01-08T12:00:00Z");
-const d = new Date("2024-Jan-08");
+// const d = new Date("2024-Jan-08");
 // console.log(d);
 
 
@@ -442,24 +496,28 @@ const d = new Date("2024-Jan-08");
 // console.log(currentHours);
 
 
-//math.round
+
+//math.round dosomik er porer number count kore
 // const number = 20.5;
 // const result = Math.round(number);
 // console.log(result);
 
-//Math.floor
+//Math.floor dosomik er porer number count kore na
 // const number2 = 10.9;
-// const result = Math.floor(number2);
-// console.log(result);
+// const result2 = Math.floor(number2);
+// console.log(result2);
 
-//Math.ceil
+
+
+//Math.ceil dosomik er pore ja thakuk na kno 1 besi output dibe
 // const number3 = 20.01;
 // const result = Math.ceil(number3);
 // console.log(result);
 
 
-//Math.truce
-// const number3 = 5.5;
+
+//Math.truce dosomik er porer number count kore na akta value return kore
+// const number3 = 5.8;
 // const result = Math.trunc(number3);
 // console.log(result);
 
@@ -481,12 +539,12 @@ const d = new Date("2024-Jan-08");
 // console.log(result);
 
 
-//Math.abs
+//Math.abs always return positive value
 // const result = Math.abs(-4.7);
 // console.log(result);
 
 
-//Math.min Math.min
+//Math.min Math.max
 // const result = Math.min(-4, 7, 3, 6, 9, -20);
 // const result2 = Math.max(-4, 7, 3, 6, 9, -20);
 // console.log(result, result2);
@@ -498,8 +556,9 @@ const d = new Date("2024-Jan-08");
 // console.log(result);
 
 
+//Math.random() given random number 1 to 9
 // const number = Math.random() * 10;
-// console.log(number);
+// console.log(number.toFixed(2));
 
 
 // let randomFloat = Math.random();
@@ -509,7 +568,7 @@ const d = new Date("2024-Jan-08");
 
 //random number generate
 // let randomInteger = Math.floor(Math.random() * 10);
-// //console.log(randomInteger);
+// console.log(randomInteger);
 
 // const myNumber = Math.floor(Math.random() * 20);
 // console.log(myNumber);
